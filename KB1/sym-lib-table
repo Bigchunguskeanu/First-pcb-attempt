@@ -3,4 +3,5 @@
   (lib (name random-keyboard-parts)(type Legacy)(uri "/Users/oliverkim/Documents/GitHub/First-pcb-attempt/random-keyboard-parts.pretty/Schematic Library/random-keyboard-parts.lib")(options "")(descr ""))
   (lib (name keyboard_parts)(type Legacy)(uri /Users/oliverkim/Documents/GitHub/First-pcb-attempt/kicad_lib_tmk/keyboard_parts.lib)(options "")(descr ""))
   (lib (name mkl27z256vfm4)(type Legacy)(uri /Users/oliverkim/Documents/GitHub/First-pcb-attempt/kicad_lib_tmk/mkl27z256vfm4.lib)(options "")(descr ""))
+  (lib (name Type-C)(type Legacy)(uri /Users/oliverkim/Documents/GitHub/First-pcb-attempt/Type-C.pretty/Type-C.lib)(options "")(descr ""))
 )
