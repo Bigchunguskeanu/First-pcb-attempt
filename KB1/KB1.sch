@@ -14,17 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L MCU_Microchip_ATmega:ATmega32U4-AU U1
-U 1 1 60DC6F07
-P 3550 3500
-F 0 "U1" H 3550 1611 50  0000 C CNN
-F 1 "ATmega32U4-AU" H 3550 1520 50  0000 C CNN
-F 2 "Package_QFP:TQFP-44_10x10mm_P0.8mm" H 3550 3500 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Datasheet.pdf" H 3550 3500 50  0001 C CNN
-	1    3550 3500
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+5V #PWR0101
 U 1 1 60DDD480
 P 3450 1450
@@ -37,12 +26,6 @@ F 3 "" H 3450 1450 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3450 1700 3450 1450
-Wire Wire Line
-	3450 1700 3550 1700
-Connection ~ 3450 1700
-Connection ~ 3550 1700
-Wire Wire Line
-	3550 1700 3650 1700
 $Comp
 L power:GND #PWR0102
 U 1 1 60DDF4D8
@@ -55,12 +38,7 @@ F 3 "" H 3100 5350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3550 5300 3450 5300
-Wire Wire Line
 	3100 5300 3100 5350
-Connection ~ 3450 5300
-Wire Wire Line
-	3450 5300 3100 5300
 $Comp
 L Device:R_Small R4
 U 1 1 60DE0D7F
@@ -580,6 +558,28 @@ Text GLabel 8550 1650 1    50   Input ~ 0
 COL0
 Text GLabel 9200 1650 1    50   Input ~ 0
 COL1
+Wire Wire Line
+	3450 5300 3100 5300
+Wire Wire Line
+	3550 5300 3450 5300
+Connection ~ 3450 5300
+Connection ~ 3450 1700
+Wire Wire Line
+	3550 1700 3650 1700
+Wire Wire Line
+	3450 1700 3550 1700
+Connection ~ 3550 1700
+$Comp
+L MCU_Microchip_ATmega:ATmega32U4-AU U1
+U 1 1 60DC6F07
+P 3550 3500
+F 0 "U1" H 3550 1611 50  0000 C CNN
+F 1 "ATmega32U4-AU" H 3550 1520 50  0000 C CNN
+F 2 "Package_QFP:TQFP-44_10x10mm_P0.8mm" H 3550 3500 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Datasheet.pdf" H 3550 3500 50  0001 C CNN
+	1    3550 3500
+	1    0    0    -1  
+$EndComp
 Text GLabel 4150 2400 2    50   Input ~ 0
 COL1
 Text GLabel 4150 2500 2    50   Input ~ 0
